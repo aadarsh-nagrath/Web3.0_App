@@ -1,5 +1,6 @@
-import createCampaign from './create-campaign.svg';
+import createCampaign from './plus.png';
 import dashboard from './dashboard.svg';
+import message from './message.png'
 import logo from './logo.svg';
 import logout from './logout.svg';
 import payment from './payment.svg';
@@ -28,4 +29,5 @@ export {
   money,
   loader,
   thirdweb,
+  message,
 };
