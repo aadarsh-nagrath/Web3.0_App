@@ -10,7 +10,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <ThirdwebProvider activeChain="goerli"> 
+  <ThirdwebProvider activeChain="polygon"> 
     <Router>
       <StateContextProvider>
         <App />
