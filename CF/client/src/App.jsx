@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { Sidebar, Navbar } from './components';
-import { CampaignDetails, CreateCampaign, Home, Profile, Community } from './pages';
+import { CampaignDetails, CreateCampaign, Nft, Home, Profile, Community } from './pages';
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/create-campaign" element={<CreateCampaign />} />
           <Route path="/campaign-details/:id" element={<CampaignDetails />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/nft" element={<Nft />} />
         </Routes>
       </div>
     </div>
