@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import pointer from "../assets/pointer.png";
 import io from "socket.io-client";
 import ScrollToBottom from "react-scroll-to-bottom";
+import ThreadCard from "../components/ThreadCard";
 
 const socket = io.connect("http://localhost:3001/");
 
@@ -40,8 +41,8 @@ const Community = () => {
     <>
       <div className="bg-[#1c1c24] flex relative  items-center flex-col rounded-[10px] sm:py-10  h-[90%]">
         <div className="w-full h-full mb-16">
-          <ScrollToBottom className="bg-[#24242e] h-[700px] overflow-y-auto border-t-1 border-b-1 border-gray-600">
-            {messageList.map((messageContent) => {
+          <ScrollToBottom className="bg-[#24242e] flex h-[700px] overflow-y-auto border-t-1 border-b-1 border-gray-600">
+            {/* {messageList.map((messageContent) => {
               return (
                 <div
                   className={userName === messageContent.author ? "flex justify-end text-right my-3" : "flex justify-start text-left m-3"}
@@ -57,7 +58,11 @@ const Community = () => {
                   </div>
                 </div>
               );
-            })}
+            })} */}
+
+            <ThreadCard />
+
+
           </ScrollToBottom>
         </div>
         <div className="absolute flex items-center inset-x-0 bottom-0 h-16 m-5 bg-[#32323e] rounded-md">

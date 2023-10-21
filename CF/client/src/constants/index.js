@@ -12,10 +12,9 @@ export const navlinks = [
     link: '/create-campaign',
   },
   {
-    name: 'payment',
+    name: 'escrow',
     imgUrl: payment,
-    link: '/',
-    disabled: true,
+    link: '/escrow',
   },
   {
     name: 'community',
