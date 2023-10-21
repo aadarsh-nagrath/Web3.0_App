@@ -27,6 +27,7 @@ const Navbar = () => {
 
   return (
     <div className="flex md:flex-row flex-col-reverse justify-between mb-[35px] gap-9">
+<<<<<<< HEAD
       <div className="lg:flex-1 flex flex-row max-w-[650px] py-2 pl-4 pr-2 h-[53px] bg-[#2b2b36] rounded-[100px]">
         <input
           type="text"
@@ -42,10 +43,22 @@ const Navbar = () => {
           />
         </div>
       </div>
+=======
+      {window.location.pathname != '/nft' ? (
+              <div className="lg:flex-1 flex flex-row max-w-[650px] py-2 pl-4 pr-2 h-[53px] bg-[#2b2b36] rounded-[100px]">
+              <input type="text" placeholder="Search 🔎" className="flex w-full font-epilogue font-normal text-[20px] placeholder:text-[#4b5264] text-white bg-transparent outline-none" />
+              
+              <div className="w-[72px] h-full rounded-[20px] bg-[#7f00ff] flex justify-center items-center cursor-pointer">
+                <img src={search} alt="search" className="w-[15px] h-[15px] object-contain"/>
+              </div>
+            </div>
+      ) : null}
+>>>>>>> d0c73f70d22fccf1004dfeab51a8056f002abb49
 
       <div className="sm:flex hidden flex-row justify-end gap-4">
         <CustomButton
           btnType="button"
+<<<<<<< HEAD
           title={address ? "Start a campaign" : "Connect"}
           styles={
             address
@@ -60,6 +73,13 @@ const Navbar = () => {
               refreshPage();
               // register(name, address);
             }
+=======
+          title={address ? 'Start a campaign' : 'Connect'}
+          styles={address ? 'bg-[#FFFFFF] text-[#0000ff]' : 'bg-[#0000ff] text-[#fcfcfc]'}
+          handleClick={() => {
+            if(address) navigate('create-campaign')
+            else connect()
+>>>>>>> d0c73f70d22fccf1004dfeab51a8056f002abb49
           }}
         />
 
