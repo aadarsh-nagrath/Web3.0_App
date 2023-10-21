@@ -1,9 +1,19 @@
 import React from 'react'
+import Header from "./nft-s/Header/Header";
+import Footer from "./nft-s/Footer/Footer";
+import "./nft.css";
+import R from "./nft-s/R/R";
 
 function Nft() {
   return (
-    <div><h1>Hello Nft</h1></div>
-  )
+    <div>
+    <Header />
+    <div>
+      <R/>
+    </div>
+    <Footer />
+    </div>
+  );
 }
 
-export default Nft
+export default Nft;
