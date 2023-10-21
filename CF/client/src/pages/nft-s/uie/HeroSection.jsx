@@ -13,13 +13,13 @@ const HeroSection = () => {
           <Col lg="6" md="6">
             <div className="hero__content">
               <h2>
-                Discover rare digital art and collect
-                <span>sell extraordinary</span> NFTs
+                Unlock the Digital Canvas: Own Your NFT Masterpiece
+                <span>sell Unique</span> NFTs
               </h2>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Deleniti excepturi omnis neque adipisci sequi ullam unde in
-                minus quis quos.
+              In the age of digital innovation and blockchain technology, the world of
+               art has undergone a revolutionary transformation. Now, collectors and enthusiasts
+                can explore and invest in rare digital art through Non-Fungible Tokens (NFTs). 
               </p>
 
               <div className="hero__btns d-flex align-items-center gap-4">
@@ -35,9 +35,9 @@ const HeroSection = () => {
             </div>
           </Col>
 
-          <Col lg="6" md="6">
-            <div className="hero__img">
-              <img src={heroImg} alt="" className="w-100" />
+          <Col lg="6" md="6" className="flex justify-center ">
+            <div className="hero__img ">
+              <img src={heroImg} alt=""  className="w-[100%]" />
             </div>
           </Col>
         </Row>

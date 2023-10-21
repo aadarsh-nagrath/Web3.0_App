@@ -11,7 +11,7 @@ const NftCard = (props) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="single__nft__card w-fit">
+    <div className="single__nft__card w-fit m-3">
       <div className="nft__img">
         <img src={imgUrl} alt="" className="w-100" />
       </div>
@@ -27,7 +27,7 @@ const NftCard = (props) => {
           </div>
 
           <div className="creator__info w-100 d-flex align-items-center justify-content-between flex">
-            <div>
+            <div className="mr-4">
               <h6>Created By</h6>
               <p>{creator}</p>
             </div>
@@ -41,7 +41,7 @@ const NftCard = (props) => {
 
         <div className=" mt-3 d-flex align-items-center justify-content-between">
           <button
-            className="bid__btn d-flex align-items-center gap-1"
+            className="bid__btn d-flex align-items-center gap-1 mr-7"
             onClick={() => setShowModal(true)}
           >
             <i class="ri-shopping-bag-line"></i> Place Bid
