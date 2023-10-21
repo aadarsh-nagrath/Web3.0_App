@@ -1,4 +1,4 @@
-import { createCampaign, dashboard, logout, payment, profile, withdraw, message } from '../assets';
+import { createCampaign, dashboard, logout, payment, profile, nft, message } from '../assets';
 
 export const navlinks = [
   {
@@ -23,10 +23,9 @@ export const navlinks = [
     link: '/community',
   },
   {
-    name: 'withdraw',
-    imgUrl: withdraw,
-    link: '/',
-    disabled: true,
+    name: 'nft',
+    imgUrl: nft,
+    link: '/nft',
   },
   {
     name: 'profile',
