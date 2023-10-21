@@ -2,10 +2,13 @@
   padding: 20px;
   background: #343444;
   border-radius: 10px;
+  width: 350px;
+  height: 480px;
 }
 
 .nft__img img {
   border-radius: 10px;
+  width:300px;
 }
 
 .nft__img {

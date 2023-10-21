@@ -11,7 +11,7 @@ const NftCard = (props) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="single__nft__card">
+    <div className="single__nft__card w-fit">
       <div className="nft__img">
         <img src={imgUrl} alt="" className="w-100" />
       </div>
@@ -21,12 +21,12 @@ const NftCard = (props) => {
           <Link to={`/market/${id}`}>{title}</Link>
         </h5>
 
-        <div className="creator__info-wrapper d-flex gap-3">
+        <div className="creator__info-wrapper d-flex gap-3 flex">
           <div className="creator__img">
             <img src={creatorImg} alt="" className="w-100" />
           </div>
 
-          <div className="creator__info w-100 d-flex align-items-center justify-content-between">
+          <div className="creator__info w-100 d-flex align-items-center justify-content-between flex">
             <div>
               <h6>Created By</h6>
               <p>{creator}</p>
@@ -50,7 +50,7 @@ const NftCard = (props) => {
           {showModal && <Modal setShowModal={setShowModal} />}
 
           <span className="history__link">
-            <Link to="#">View History</Link>
+            <Link to="#">History</Link>
           </span>
         </div>
       </div>

@@ -54,9 +54,9 @@ const Header = () => {
           <div className="logo">
             <h2 className=" d-flex gap-2 align-items-center ">
               <span>
-                <i class="ri-fire-fill"></i>
+                
               </span>
-              NFTs
+              
             </h2>
           </div>
 
@@ -78,12 +78,12 @@ const Header = () => {
           </div>
 
           <div className="nav__right d-flex align-items-center gap-5 ">
-            <button className="btn d-flex gap-2 align-items-center">
+            {/* <button className="btn d-flex gap-2 align-items-center">
               <span>
                 <i class="ri-wallet-line"></i>
               </span>
               <Link to="/wallet">Connect Wallet</Link>
-            </button>
+            </button> */}
 
             <span className="mobile__menu">
               <i class="ri-menu-line" onClick={toggleMenu}></i>
