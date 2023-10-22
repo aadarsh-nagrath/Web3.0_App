@@ -41,7 +41,7 @@ const Navbar = () => {
         <CustomButton
           btnType="button"
           title={address ? 'Start a campaign' : 'Connect'}
-          styles={address ? 'bg-[#FFFFFF] text-[#0000ff]' : 'bg-[#0000ff] text-[#fcfcfc]'}
+          styles={address ? 'bg-[#FFFFFF] text-blue-600' : 'bg-blue-600 text-[#fcfcfc]'}
           handleClick={() => {
             if(address) navigate('create-campaign')
             else connect()

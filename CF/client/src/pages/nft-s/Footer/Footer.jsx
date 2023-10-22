@@ -148,13 +148,7 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col lg="12" className=" mt-4 text-center">
-            <p className="copyright">
-              {" "}
-              Copyrights 2022, Developed by Muhibur Rahman. @Muhib's Tech Diary
-              All Rights Reserved.{" "}
-            </p>
-          </Col>
+          
         </Row>
       </Container>
     </footer>
